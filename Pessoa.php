@@ -1,44 +1,42 @@
 <?php
 class Pessoa extends model{
 
-	public function adicionar($nome,$idade,$sexo,$endereco){
-		$sql = "INSERT INTO pessoa (nome, idade, sexo, endereco)
-		        VALUES (:nome, :idade, :sexo, :endereco)";
+	public function adicionar($nome,$data_nascimento, $cpf,$endereco, $sexo, $email, $senha){
+		$sql = "INSERT INTO pessoa (nome, data_nascimento, cpf, endereco, sexo, email, senha)
+		        VALUES (:nome, :data_nascimento, :cpf, :endereco, :sexo, :email, :senha)";
 
 		$sql = $this->db->prepare($sql);
 		$sql->bindValue(":nome"    , $nome);
-		$sql->bindValue(":idade"   , $idade);
-		$sql->bindValue(":sexo"    , $sexo);
-		$sql->bindValue(":endereco", $endereco);
+		$sql->bindValue(":data_nascimento"   , $data_nascimento);
+        $sql->bindValue(":cpf"    , $cpf);
+        $sql->bindValue(":endereco", $endereco);
+        $sql->bindValue(":sexo"    , $sexo);
+        $sql->bindValue(":email"    , $email);
+        $sql->bindValue(":senha"    , $senha);
 		$sql->execute();
 
 		return $this->db->lastInsertId();
 	}
 
-	public function editar($id_pessoa,$nome,$idade,$sexo,$endereco){
+	public function editar($nome,$data_nascimento, $cpf,$endereco, $sexo, $email, $senha){
 		$sql = "UPDATE pessoa 
 		           SET nome     = :nome
-		             , idade    = :idade
+		             , data_nascimento    = :data_nascimento
+                     , cpf      = :cpf
+                     , endereco = :endereco
 		             , sexo     = :sexo
-		             , endereco = :endereco
+                     , email    = :email
+                     , senha    = :senha
 		         WHERE id_pessoa = :id_pessoa";
 
 		$sql = $this->db->prepare($sql);
 		$sql->bindValue(":nome"     , $nome);
-		$sql->bindValue(":idade"    , $idade);
+		$sql->bindValue(":data_nascimento"    , $data_nascimento);
+        $sql->bindValue(":cpf" , $cpf);
+        $sql->bindValue(":endereco" , $endereco);
 		$sql->bindValue(":sexo"     , $sexo);
-		$sql->bindValue(":endereco" , $endereco);
-		$sql->bindValue(":id_pessoa", $id_pessoa);
-		$sql->execute();
-	}
-
-	public function imagem($id_pessoa,$url_foto){
-		$sql = "UPDATE pessoa 
-		           SET url_foto  = :url_foto
-		         WHERE id_pessoa = :id_pessoa";
-
-		$sql = $this->db->prepare($sql);
-		$sql->bindValue(":url_foto" , $url_foto);
+        $sql->bindValue(":email" , $email);
+        $sql->bindValue(":senha" , $senha);
 		$sql->bindValue(":id_pessoa", $id_pessoa);
 		$sql->execute();
 	}
