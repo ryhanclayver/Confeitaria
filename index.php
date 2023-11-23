@@ -5,22 +5,11 @@
 ?>
 
 <?php require 'head.php'; ?>
-<style>
-    main {
-        background-color: #fdcae1;
-    }
-    .container{
-    background-image: url('assets/images/imagemfundo.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-</style>
 
 <html>
     <main>
-        <div class="container mt-5" id="formulario">
+        <div id="cordefundo">
+        <div class="container" id="formulario">
             <div class="row">
                 <!-- Formulário de Login -->
                 <div class="col-md-6">
@@ -85,5 +74,7 @@
                 </div>
             </div>
         </div>
+        </div>
     </main>
+    <?php require 'footer.php'; ?>
 </html>

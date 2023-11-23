@@ -1,0 +1,33 @@
+:root{
+    --cor-rosa-claro: #ffe5f0;
+    --cor-rosa-escuro: #fdcae1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
+}
+
+#cordefundo{
+    background-color: var(--cor-rosa-claro);
+}
+
+#formulario{
+    background-color: var(--cor-rosa-escuro);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    border: 2px solid #e3b1c8;
+}
+
+header{
+    background-color: var(--cor-rosa-claro);
+}
+
+footer{
+    background-color: var(--cor-rosa-claro);
+}
+
+
