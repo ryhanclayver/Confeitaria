@@ -5,6 +5,18 @@
 ?>
 
 <?php require 'head.php'; ?>
+<style>
+    main {
+        background-color: #fdcae1;
+    }
+    .container{
+    background-image: url('assets/images/imagemfundo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+</style>
 
 <html>
     <main>
