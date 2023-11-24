@@ -97,14 +97,15 @@ button:hover {
 }
 
 #botoes {
-    margin-top: 70px; 
-    margin-bottom: 50px; 
+    margin-top: 80px; 
+    margin-bottom: 60px; 
   }
 
 footer {
     text-align: center;
-    background-color: #fdcae1;
+    background-color: var(--cor-rosa-escuro);
     padding: 10px;
+    border-top: 3px solid #5b1f00;
 }
 
 
