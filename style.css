@@ -11,11 +11,11 @@
 
 #cordefundo{
     background-color: var(--cor-rosa-claro);
+    /*background-image: url(assets/images/fundo.jpg);*/
 }
 
 header{
     text-align: center;
-    
 }
 
 #formulario{
