@@ -23,7 +23,6 @@
 				circleContainer.appendChild(circleDiv);
 			}
 		</script>
-		<h1> oi </h1>
 	</header>
 	
 </html>

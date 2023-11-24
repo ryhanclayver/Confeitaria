@@ -4,11 +4,12 @@
     $dados = $pessoa->getAll();
 ?>
 
-<?php require 'head.php'; ?>
+
 
 <html>
-    <main>
-        <div id="cordefundo">
+    <div id="cordefundo">
+    <?php require 'head.php'; ?>
+        <main>
             <div class="container" id="formulario">
                 <div class="row">
                     <!-- Formulário de Login -->
@@ -74,7 +75,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
-    <?php require 'footer.php'; ?>
+        </main>
+    <?php require 'footer.php'; ?>,
+    </div>
 </html>
