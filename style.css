@@ -11,7 +11,7 @@
 
 #cordefundo{
     background-color: var(--cor-rosa-claro);
-    /*background-image: url(assets/images/fundo.jpg);*/
+    background-image: url(assets/images/fundo.jpg);
 }
 
 header{
@@ -59,6 +59,41 @@ button:hover {
     border-radius: 50%;
     position: relative;
     transform: translate(-50%, -50%);
+}
+
+.navbar{
+    background-color: var(--cor-rosa-claro);
+    border-radius: 25px;
+    border: 2px solid #e3b1c8;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.navbar-brand img {
+    padding-left: 30px;
+    height: 75px; 
+    width: auto; 
+       
+}
+
+.navbar-nav .nav-link {
+    font-size: 22px; 
+    margin-left: 5px;
+    margin-right: 5px;
+    color:#212529;
+}
+
+#mural {
+    margin-top: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border: 3px solid #e3b1c8;
+    background-color: #ffe5f0;
+    border-radius: 50px;
 }
 
 

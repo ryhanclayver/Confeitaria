@@ -4,8 +4,6 @@
     $dados = $pessoa->getAll();
 ?>
 
-
-
 <html>
     <div id="cordefundo">
     <?php require 'head.php'; ?>
@@ -76,6 +74,6 @@
                 </div>
             </div>
         </main>
-    <?php require 'footer.php'; ?>,
+    <?php require 'footer.php'; ?>
     </div>
 </html>
