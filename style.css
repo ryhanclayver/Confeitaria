@@ -92,10 +92,20 @@ button:hover {
     padding-top: 50px;
     padding-bottom: 50px;
     border: 3px solid #e3b1c8;
-    background-color: #ffe5f0;
+    background-color: var(--cor-rosa-escuro);
     border-radius: 50px;
 }
 
+#botoes {
+    margin-top: 70px; 
+    margin-bottom: 50px; 
+  }
+
+footer {
+    text-align: center;
+    background-color: #fdcae1;
+    padding: 10px;
+}
 
 
 
