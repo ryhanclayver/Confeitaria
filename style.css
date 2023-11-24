@@ -14,12 +14,13 @@
 }
 
 #formulario{
-    background-color: var(--cor-rosa-escuro);
+    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 10px;
     border: 2px solid #e3b1c8;
+    background-color: var(--cor-rosa-escuro);
 
 }
 
@@ -43,5 +44,27 @@ header{
 footer{
     background-color: var(--cor-rosa-claro);
 }
+
+
+.circle-container {
+    display: flex;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.image-div {
+    padding: 20px 20px;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+}
+
+
+
 
 
