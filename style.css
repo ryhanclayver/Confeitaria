@@ -26,6 +26,7 @@ header{
     border-radius: 10px;
     border: 2px solid #e3b1c8;
     background-color: var(--cor-rosa-escuro);
+    margin-bottom: 30px;
 
 }
 
@@ -77,6 +78,7 @@ button:hover {
 }
 
 .navbar-nav .nav-link {
+    font-weight: bold;
     font-size: 22px; 
     margin-left: 5px;
     margin-right: 5px;
@@ -102,6 +104,7 @@ button:hover {
   }
 
 footer {
+    font-weight: bold;
     text-align: center;
     background-color: var(--cor-rosa-escuro);
     padding: 10px;
