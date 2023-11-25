@@ -15,6 +15,17 @@ class Produto extends model{
 		return $this->db->lastInsertId();
 	}
 
+        public function imagem($id_produto, $caminhoImagem) {
+        $sql = "UPDATE cadastroproduto 
+                SET imgP = :caminhoImagem 
+                WHERE id_produto = :id_produto";
+
+        $sql = $this->db->prepare($sql);
+        $sql->bindValue(":caminhoImagem", $caminhoImagem);
+        $sql->bindValue(":id_produto", $id_produto);
+        $sql->execute();
+    }
+
 	public function editar($id_produto,$nomeP,$precoP,$quantP,$ingP){
 		$sql = "UPDATE pessoa 
 		           SET nomeP     = :nomeP

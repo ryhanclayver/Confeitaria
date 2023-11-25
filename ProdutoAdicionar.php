@@ -8,7 +8,7 @@
 	if(isset($_POST['nomeP'])){
 		require 'run.php';
 		$produto = new Produto();
-		$id_produto = $produto->adicionar($nomeP, $precoP, $quantP, $ingP);
+		$id_produto = $produto->adicionarP($nomeP, $precoP, $quantP, $ingP);
 	}	
 
 	if(isset($_FILES['imgP']['name']) && !empty($_FILES['imgP']['name'])){
@@ -21,4 +21,5 @@
 		// Atualiza o caminho da imagem no banco de dados
 		$produto->imagem($id_produto, $pasta.$arquivo);
 	}
+    exit;
 ?>
