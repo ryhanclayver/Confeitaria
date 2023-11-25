@@ -1,3 +1,4 @@
+
 :root{
     --cor-rosa-claro: #ffe5f0;
     --cor-rosa-escuro: #fdcae1;
@@ -6,7 +7,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #cordefundo{
@@ -18,8 +19,7 @@ header{
     text-align: center;
 }
 
-#formulario{
-    
+#formulario{   
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,7 +27,6 @@ header{
     border: 2px solid #e3b1c8;
     background-color: var(--cor-rosa-escuro);
     margin-bottom: 30px;
-
 }
 
 button{
@@ -96,6 +95,7 @@ button:hover {
     border: 3px solid #e3b1c8;
     background-color: var(--cor-rosa-escuro);
     border-radius: 50px;
+    
 }
 
 #botoes {

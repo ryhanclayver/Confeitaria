@@ -2,9 +2,9 @@
     <?php require 'head.php'; ?>
     <?php require 'nav.php'; ?>
 
-    <div class="container" id="formulario">          
+    <br><div class="container" id="formulario">          
         <h3>Cadastro de Produtos</h3>
-        <form method="POST" action="produtoadicionar.php" enctype="multipart/form-data">
+        <form method="POST" action="produtoadicionar.php" enctype="multipart/form-data" class="custom-form">
             <div class="mb-3">
                 <label for="nomeP" class="form-label">Nome:</label>
                 <input type="text" class="form-control" id="nomeP" name="nomeP" placeholder="Nome do Produto">
