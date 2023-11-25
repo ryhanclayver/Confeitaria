@@ -18,7 +18,7 @@ class Pessoa extends model{
 		return $this->db->lastInsertId();
 	}
 
-	public function editar($nome,$data_nascimento, $cpf,$endereco, $sexo, $email, $senha){
+	public function editar($id_pessoa,$nome,$data_nascimento, $cpf,$endereco, $sexo, $email, $senha){
 		$sql = "UPDATE pessoa 
 		           SET nome     = :nome
 		             , data_nascimento    = :data_nascimento

@@ -8,8 +8,6 @@
     $email = $_POST['email'];
     $senha = $_POST['senha'];
     
-	
-
 	if(isset($_POST['nome'])){
 		require 'run.php';
 		$pessoa = new Pessoa();
