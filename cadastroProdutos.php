@@ -13,7 +13,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="precoP" class="form-label">Preço:</label>
-                        <input type="number" class="form-control" id="precoP" placeholder="Preço do Produto">
+                        <input type="text" class="form-control" id="precoP" placeholder="Preço do Produto">
                     </div>
                     <div class="mb-3">
                         <label for="quantP" class="form-label">Quantidade:</label>
@@ -25,7 +25,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="imgP" class="form-label">Imagem:</label>
-                        <input type="" class="form-control" id="imgP" placeholder="Imagem do Produto">
+                        <input type="file" class="form-control" id="imgP" name="imgP" accept="image/*" placeholder="Imagem do Produto">
                     </div>
                     <button type="submit" class="btn btn-primary">Cadastrar</button>
                 </form>
