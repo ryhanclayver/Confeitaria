@@ -8,10 +8,10 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" onclick="redirecionarHome()" >Home</a>
+            <a class="nav-link" href="#" onclick="redirecionarHome()" >Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" onclick="redirecionarCadastro()">Cadastro</a>
+            <a class="nav-link" href="#" onclick="redirecionarCadastro()">Cadastro</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Produtos</a>
