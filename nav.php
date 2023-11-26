@@ -8,10 +8,10 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#" >Home</a>
+            <a class="nav-link" onclick="redirecionarHome()" >Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Cadastro</a>
+            <a class="nav-link" onclick="redirecionarCadastro()">Cadastro</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Produtos</a>
@@ -19,4 +19,15 @@
         </ul>
       </div>
     </div>
+    <script>
+        function redirecionarHome() {
+            // Redireciona para welcome.php
+            window.location.href = 'welcome.php';
+        }
+        function redirecionarCadastro() {
+            // Redireciona para index.php
+            window.location.href = 'index.php';
+        }
+    </script>
+
   </nav>
