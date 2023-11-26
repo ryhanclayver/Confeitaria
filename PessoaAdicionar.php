@@ -13,4 +13,7 @@
 		$pessoa = new Pessoa();
 		$id_pessoa = $pessoa->adicionar($nome,$data_nascimento,$cpf,$endereco,$sexo,$email,$senha);
 	}
+    header('Location: welcome.php');
     exit;
+
+
