@@ -21,5 +21,6 @@
 		// Atualiza o caminho da imagem no banco de dados
 		$produto->imagem($id_produto, $pasta.$arquivo);
 	}
+	header('Location: welcome.php');
     exit;
 ?>
