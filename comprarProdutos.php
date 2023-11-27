@@ -33,7 +33,7 @@ $produtos = $produto->getAll();
                                 Preço: <?php echo $produto['precoP']; ?><br>
                                 Quantidade: <?php echo $produto['quantP']; ?><br>
                                 Ingredientes: <?php echo $produto['ingP']; ?>
-                            </p>                                <!-- botão Comprar -->
+                            </p><!-- botão Comprar -->
                             <a href="#" class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
