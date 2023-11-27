@@ -22,7 +22,7 @@ $produtos = $produto->getAll();
                             echo '<img src="' . $produto['imgP'] . '" class="card-img-top img-fluid" alt="Imagem do Produto">';
                         } else {
                             // Se não houver imagem, exibe essa imagem
-                            echo '<img src="assets/images/iconsweet.png" class="card-img-top img-fluid" alt="Imagem Padrão">';
+                            echo '<img src="assets/images/noimage.png" class="card-img-top img-fluid" alt="Imagem Padrão">';
                         }
                         ?>
                         <div class="card-body">
