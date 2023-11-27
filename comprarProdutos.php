@@ -24,7 +24,7 @@ $produtos = $produto->getAll();
                             echo '<img src="assets/images/noimage.png" class="card-img-top img-fluid" alt="Imagem Padrão">';
                         }
                         ?>
-                        <div class="card-body d-flex flex-column align-items-center"> <!-- Adicionado d-flex e flex-column aqui -->
+                        <div class="card-body d-flex flex-column align-items-center">
                             <!-- Nome do Produto -->
                             <h5 class="card-title"><?php echo $produto['nomeP']; ?></h5>
                             <!-- Preço, Quantidade, Ingredientes -->
@@ -34,7 +34,7 @@ $produtos = $produto->getAll();
                                 Ingredientes: <?php echo $produto['ingP']; ?>
                             </p>
                             <!-- botão Comprar -->
-                            <button href="#" class="btn btn-primary mt-auto">Comprar</button> <!-- Adicionado mt-auto para margem superior automática -->
+                            <button href="#" class="btn btn-primary mt-auto">Comprar</button>
                         </div>
                     </div>
                 </div>
