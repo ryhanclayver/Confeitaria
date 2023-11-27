@@ -10,8 +10,7 @@ $produtos = $produto->getAll();
     <?php require 'nav.php'; ?>
 
     <main class="container mt-5" id="formulario">
-        <h1 class="text-center">Produtos Disponíveis</h1>
-
+        <br><h1 class="text-center">Produtos Disponíveis</h1><br>
         <div class="row">
             <?php foreach ($produtos as $produto) : ?>
                 <div class="col-md-4 mb-4">
@@ -25,7 +24,7 @@ $produtos = $produto->getAll();
                             echo '<img src="assets/images/noimage.png" class="card-img-top img-fluid" alt="Imagem Padrão">';
                         }
                         ?>
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column align-items-center"> <!-- Adicionado d-flex e flex-column aqui -->
                             <!-- Nome do Produto -->
                             <h5 class="card-title"><?php echo $produto['nomeP']; ?></h5>
                             <!-- Preço, Quantidade, Ingredientes -->
@@ -33,8 +32,9 @@ $produtos = $produto->getAll();
                                 Preço: <?php echo $produto['precoP']; ?><br>
                                 Quantidade: <?php echo $produto['quantP']; ?><br>
                                 Ingredientes: <?php echo $produto['ingP']; ?>
-                            </p><!-- botão Comprar -->
-                            <a href="#" class="btn btn-primary">Comprar</a>
+                            </p>
+                            <!-- botão Comprar -->
+                            <button href="#" class="btn btn-primary mt-auto">Comprar</button> <!-- Adicionado mt-auto para margem superior automática -->
                         </div>
                     </div>
                 </div>
