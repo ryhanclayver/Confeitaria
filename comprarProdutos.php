@@ -9,7 +9,7 @@ $produtos = $produto->getAll();
     <?php require 'head.php'; ?>
     <?php require 'nav.php'; ?>
 
-    <main class="container mt-5">
+    <main class="container mt-5" id="formulario">
         <h1 class="text-center">Produtos Disponíveis</h1>
 
         <div class="row">
@@ -19,10 +19,10 @@ $produtos = $produto->getAll();
                         <?php
                         // Exibindo a imagem se existir
                         if (!empty($produto['imgP'])) {
-                            echo '<img src="' . $produto['imgP'] . '" class="card-img-top img-fluid" alt="Imagem do Produto" style="width: 100%; height: 200px; object-fit: cover;">';
+                            echo '<img src="' . $produto['imgP'] . '" class="card-img-top img-fluid" alt="Imagem do Produto">';
                         } else {
                             // Se não houver imagem, exibe essa imagem
-                            echo '<img src="assets/images/iconsweet.png" class="card-img-top img-fluid" alt="Imagem Padrão" style="width: 100%; height: 200px; object-fit: cover;">';
+                            echo '<img src="assets/images/iconsweet.png" class="card-img-top img-fluid" alt="Imagem Padrão">';
                         }
                         ?>
                         <div class="card-body">
@@ -33,8 +33,7 @@ $produtos = $produto->getAll();
                                 Preço: <?php echo $produto['precoP']; ?><br>
                                 Quantidade: <?php echo $produto['quantP']; ?><br>
                                 Ingredientes: <?php echo $produto['ingP']; ?>
-                            </p>
-                            <!-- botão Comprar -->
+                            </p>                                <!-- botão Comprar -->
                             <a href="#" class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
@@ -42,4 +41,5 @@ $produtos = $produto->getAll();
             <?php endforeach; ?>
         </div>
     </main>
+    <?php require 'footer.php'; ?>
 </div>
