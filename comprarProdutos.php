@@ -19,10 +19,10 @@ $produtos = $produto->getAll();
                         <?php
                         // Exibindo a imagem se existir
                         if (!empty($produto['imgP'])) {
-                            echo '<img src="' . $produto['imgP'] . '" class="card-img-top" alt="Imagem do Produto">';
+                            echo '<img src="' . $produto['imgP'] . '" class="card-img-top img-fluid" alt="Imagem do Produto" style="width: 100%; height: 200px; object-fit: cover;">';
                         } else {
                             // Se não houver imagem, exibe essa imagem
-                            echo '<img src="assets/images/iconsweet.png" class="card-img-top" alt="Imagem Padrão">';
+                            echo '<img src="assets/images/iconsweet.png" class="card-img-top img-fluid" alt="Imagem Padrão" style="width: 100%; height: 200px; object-fit: cover;">';
                         }
                         ?>
                         <div class="card-body">
