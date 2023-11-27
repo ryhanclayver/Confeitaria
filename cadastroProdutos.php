@@ -32,6 +32,5 @@
             <button type="submit" class="btn btn-primary">Cadastrar</button>
         </form>
     </div>
-    
     <?php require 'footer.php'; ?>
 </div>
