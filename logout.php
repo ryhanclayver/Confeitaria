@@ -1,13 +1,9 @@
 <?php
-    session_start();
-   // $_SESSION['logado'] = false;
-   // $_SESSION['id_pessoa'] = NULL;
+    if(!isset($_SESSION['logado'])){
+        session_start();      
+    }
 
-        echo "Antes de alterar: ".$_SESSION['logado']."<br>";
-    $_SESSION['logado'] = false;
-    echo "Depois de alterar: ".$_SESSION['logado']."<br>";
+    session_destroy();  
 
-    
-    //echo '<script>alert("Deslogado com sucesso"); window.location.href = "index.php";</script>';
-
+    echo '<script>alert("Deslogado com sucesso"); window.location.href = "index.php";</script>';
 ?>
