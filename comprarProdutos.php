@@ -1,12 +1,12 @@
 <?php
-// Conectando ao banco de dados e recebendo os dados dos produtos
-require 'run.php';
-$produto = new Produto();
-$produtos = $produto->getAll();
+    // Conectando ao banco de dados e recebendo os dados dos produtos
+    require 'run.php';
+    $produto = new Produto();
+    $produtos = $produto->getAll();
 
-if(!isset($_SESSION['logado'])){
-    header("Location: index.php");
-}
+    if(!isset($_SESSION['logado'])){
+        header("Location: index.php");
+    }
 ?>
 
 <div id="cordefundo">

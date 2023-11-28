@@ -1,9 +1,11 @@
 <?php
+    session_start();
     if(!isset($_SESSION['logado'])){
         header("Location: index.php");      
 }
 ?>
 <html>
+        
     <div id="cordefundo">
         <?php require 'head.php'; ?>
         <?php require 'nav.php'; ?>
