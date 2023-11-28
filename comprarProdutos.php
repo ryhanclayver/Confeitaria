@@ -38,7 +38,7 @@
                                 Ingredientes: <?php echo $produto['ingP']; ?>
                             </p>
                             <!-- botão Comprar -->
-                            <button href="#" class="btn btn-primary mt-auto">Comprar</button>
+                            <button href="adicionarCarrinho.php" class="btn btn-primary mt-auto">Comprar</button>
                         </div>
                     </div>
                 </div>
