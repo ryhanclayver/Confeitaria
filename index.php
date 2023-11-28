@@ -13,19 +13,16 @@
                     <!-- Formulário de Login -->
                     <div class="col-md-6">
                         <h3>Login</h3>
-                        <form>
+                        <form method="POST" action="login.php">
                             <div class="mb-3">
                                 <label for="loginEmail" class="form-label">Email:</label>
-                                <input type="email" class="form-control" id="loginEmail" placeholder="Seu email">
+                                <input type="email" class="form-control" id="loginEmail" name="loginEmail" placeholder="Seu email">
                             </div>
                             <div class="mb-3">
                                 <label for="loginSenha" class="form-label">Senha:</label>
-                                <input type="password" class="form-control" id="loginSenha" placeholder="Sua senha">
+                                <input type="password" class="form-control" id="loginSenha" name="loginSenha" placeholder="Sua senha">
                             </div>
                             <button type="submit" class="btn btn-primary">Entrar</button>
-                            <div class="mb-3 text-center">
-                                <img src="assets/images/iconsweet.png" class="img-fluid" alt="Logo do site">
-                            </div>
                         </form>
                     </div>
 
