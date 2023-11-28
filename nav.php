@@ -11,7 +11,7 @@
             <a class="nav-link" href="welcome.php">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Carrinho</a>
+            <a class="nav-link" href="carrinho.php">Carrinho</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Histórico</a>
