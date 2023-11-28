@@ -3,6 +3,10 @@
 require 'run.php';
 $produto = new Produto();
 $produtos = $produto->getAll();
+
+if(!isset($_SESSION['logado'])){
+    header("Location: index.php");
+}
 ?>
 
 <div id="cordefundo">
