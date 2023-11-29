@@ -12,6 +12,3 @@
 
     <?php require 'footer.php'; ?>
 </div>
-
-
-
