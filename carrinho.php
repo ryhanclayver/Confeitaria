@@ -38,7 +38,7 @@ if (!empty($_SESSION['carrinho'])) {
                     <th>Preço Unitário</th>
                     <th>Quantidade</th>
                     <th>Preço Total</th>
-                    <th>Ação</th>
+                    <th>Excluir</th>
                 </tr>
             </thead>
             <tbody>
