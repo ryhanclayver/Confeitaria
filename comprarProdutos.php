@@ -29,7 +29,7 @@
                             echo '<img src="assets/images/noimage.png" class="card-img-top img-fluid" alt="Imagem Padrão">';
                         }
                         ?>
-                        <div class="card-body d-flex flex-column align-items-center">
+                        <div class="card-body d-flex flex-column align-items-center" id="botaoC">
                             <!-- Nome do Produto -->
                             <h5 class="card-title"><?php echo $produto['nomeP']; ?></h5>
                             <!-- Preço, Quantidade, Ingredientes -->
@@ -38,11 +38,13 @@
                                 Quantidade: <?php echo $produto['quantP']; ?><br>
                                 Ingredientes: <?php echo $produto['ingP']; ?>
                             </p>
-                            <!-- botão Comprar -->
                             <form action="adicionarCarrinho.php" method="post">
+                                <!-- Adicione um campo hidden para o ID do produto -->
                                 <input type="hidden" name="id_produto" value="<?php echo $produto['id_produto']; ?>">
-                                <button type="submit" class="btn btn-primary mt-auto">Comprar</button>
-                            </form>
+
+                                <!-- Botão para adicionar ao carrinho -->
+                                <button type="submit" class="btn btn-primary" name="comprar">Comprar</button>
+                            </form>                  
                         </div>
                     </div>
                 </div>
