@@ -39,7 +39,10 @@
                                 Ingredientes: <?php echo $produto['ingP']; ?>
                             </p>
                             <!-- botão Comprar -->
-                            <button href="adicionarCarrinho.php" class="btn btn-primary mt-auto">Comprar</button>
+                            <form action="adicionarCarrinho.php" method="post">
+                                <input type="hidden" name="id_produto" value="<?php echo $produto['id_produto']; ?>">
+                                <button type="submit" class="btn btn-primary mt-auto">Comprar</button>
+                            </form>
                         </div>
                     </div>
                 </div>
