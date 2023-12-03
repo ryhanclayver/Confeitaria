@@ -12,8 +12,8 @@
 		require 'run.php';
 		$pessoa = new Pessoa();
 		$id_pessoa = $pessoa->adicionar($nome,$data_nascimento,$cpf,$endereco,$sexo,$email,$senha);
+        echo'<script>alert("Cadastro realizado com sucesso!"); window.location.href = "index.php";</script>';
 	}
-    header('Location: index.php');
     exit;
 
 
