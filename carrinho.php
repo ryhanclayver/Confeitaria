@@ -3,6 +3,11 @@
         // Redireciona para removerItemCarrinho.php com o ID do produto
         window.location.href = 'removerItemCarrinho.php?id_produto=' + id;
     }
+
+    function comprarProdutos() {
+        // Redireciona para o arquivo compra.php
+        window.location.href = 'compra.php';
+    }
 </script>
 
 <?php
@@ -11,6 +16,7 @@ session_start();
 // Verifica se o usuário está logado
 if (!isset($_SESSION['logado'])) {
     header("Location: index.php");
+    exit();
 }
 
 // Inicializa o preço total como zero
@@ -72,7 +78,7 @@ if (isset($_SESSION['carrinho'])) {
         <!-- Preço total e botão "Comprar" -->
         <div class="text-right">
             <h4><strong>Preço Total: R$<?php echo number_format($precoTotal, 2, ',', '.'); ?></strong></h4>
-            <button href="" class="btn btn-primary btn-lg">Comprar</button>
+            <button class="btn btn-primary btn-lg" onclick="comprarProdutos()">Comprar</button>
         </div>
     </main>
 
