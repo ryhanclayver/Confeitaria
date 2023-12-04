@@ -57,7 +57,7 @@ if (isset($_SESSION['carrinho'])) {
             $novaQuantidade = $quantidadeDisponivel - $quantidadeComprada;
             $atualizarEstoque = $db->prepare("UPDATE cadastroproduto SET quantP = :novaQuantidade WHERE nomeP = :nomeP");
             $atualizarEstoque->bindParam(':novaQuantidade', $novaQuantidade, PDO::PARAM_INT);
-            $atualizarEstoque->bindParam(':nomeP', $nomeP, PDO::PARAM_STR); // Use PARAM_STR para strings
+            $atualizarEstoque->bindParam(':nomeP', $nomeP, PDO::PARAM_STR);
             $atualizarEstoque->execute();
         }
 
@@ -67,7 +67,7 @@ if (isset($_SESSION['carrinho'])) {
         // Limpa o carrinho após a compra
         unset($_SESSION['carrinho']);
 
-        header("Location: carrinho.php");
+        echo'<script>alert("Compra efetuada!"); window.location.href = "welcome.php";</script>';
         exit();
     } catch (Exception $e) {
         // Rollback da transação em caso de erro
